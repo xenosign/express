@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon app.js",
-    "start": "nodemon --watch \"./routes/*.js\" --exec \"npm run server\""
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
