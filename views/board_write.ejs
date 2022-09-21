@@ -133,7 +133,7 @@
       <div class="board_header">
         <h1>글 쓰기</h1>
       </div>
-      <form action="/board/write" method="POST" class="board_form">
+      <form action="/board/write" method="POST" class="board_form" enctype="multipart/form-data">
         <div class="form_title">
           <h3>제목</h3>
           <input type="text" name="title" required />
@@ -141,6 +141,10 @@
         <div class="form_content">
           <h3>내용</h3>
           <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form_img">
+          <h3>이미지 업로드</h3>
+          <input type="file" name="img" />
         </div>
         <button type="submit">글 작성하기</button>
       </form>
